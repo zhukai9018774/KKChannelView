@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FED242BE2180468F00DE5EAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242BD2180468F00DE5EAE /* AppDelegate.m */; };
+		FED242C12180468F00DE5EAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242C02180468F00DE5EAE /* ViewController.m */; };
+		FED242C42180468F00DE5EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED242C22180468F00DE5EAE /* Main.storyboard */; };
+		FED242C62180469000DE5EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED242C52180469000DE5EAE /* Assets.xcassets */; };
+		FED242C92180469000DE5EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED242C72180469000DE5EAE /* LaunchScreen.storyboard */; };
+		FED242CC2180469000DE5EAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242CB2180469000DE5EAE /* main.m */; };
+		FED242D62180469000DE5EAE /* KKChannelViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242D52180469000DE5EAE /* KKChannelViewTests.m */; };
+		FED242E12180469000DE5EAE /* KKChannelViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242E02180469000DE5EAE /* KKChannelViewUITests.m */; };
+		FED242F5218046C000DE5EAE /* KKChannelLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242F0218046C000DE5EAE /* KKChannelLabel.m */; };
+		FED242F6218046C000DE5EAE /* KKChannelView..m in Sources */ = {isa = PBXBuildFile; fileRef = FED242F1218046C000DE5EAE /* KKChannelView..m */; };
+		FED242F7218046C000DE5EAE /* KKChannelViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242F4218046C000DE5EAE /* KKChannelViewLayout.m */; };
+		FED242FA218046E900DE5EAE /* KKTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242F9218046E900DE5EAE /* KKTestCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FED242D22180469000DE5EAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FED242B12180468F00DE5EAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED242B82180468F00DE5EAE;
+			remoteInfo = KKChannelView;
+		};
+		FED242DD2180469000DE5EAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FED242B12180468F00DE5EAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FED242B82180468F00DE5EAE;
+			remoteInfo = KKChannelView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FED242B92180468F00DE5EAE /* KKChannelView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKChannelView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED242BC2180468F00DE5EAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FED242BD2180468F00DE5EAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FED242BF2180468F00DE5EAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FED242C02180468F00DE5EAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FED242C32180468F00DE5EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FED242C52180469000DE5EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FED242C82180469000DE5EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FED242CA2180469000DE5EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED242CB2180469000DE5EAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FED242D12180469000DE5EAE /* KKChannelViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKChannelViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED242D52180469000DE5EAE /* KKChannelViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKChannelViewTests.m; sourceTree = "<group>"; };
+		FED242D72180469000DE5EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED242DC2180469000DE5EAE /* KKChannelViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKChannelViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED242E02180469000DE5EAE /* KKChannelViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKChannelViewUITests.m; sourceTree = "<group>"; };
+		FED242E22180469000DE5EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED242EF218046C000DE5EAE /* KKChannelLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKChannelLabel.h; sourceTree = "<group>"; };
+		FED242F0218046C000DE5EAE /* KKChannelLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKChannelLabel.m; sourceTree = "<group>"; };
+		FED242F1218046C000DE5EAE /* KKChannelView..m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKChannelView..m; sourceTree = "<group>"; };
+		FED242F2218046C000DE5EAE /* KKChannelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKChannelView.h; sourceTree = "<group>"; };
+		FED242F3218046C000DE5EAE /* KKChannelViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKChannelViewLayout.h; sourceTree = "<group>"; };
+		FED242F4218046C000DE5EAE /* KKChannelViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKChannelViewLayout.m; sourceTree = "<group>"; };
+		FED242F8218046E900DE5EAE /* KKTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTestCell.h; sourceTree = "<group>"; };
+		FED242F9218046E900DE5EAE /* KKTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTestCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FED242B62180468F00DE5EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED242CE2180469000DE5EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED242D92180469000DE5EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FED242B02180468F00DE5EAE = {
+			isa = PBXGroup;
+			children = (
+				FED242BB2180468F00DE5EAE /* KKChannelView */,
+				FED242D42180469000DE5EAE /* KKChannelViewTests */,
+				FED242DF2180469000DE5EAE /* KKChannelViewUITests */,
+				FED242BA2180468F00DE5EAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FED242BA2180468F00DE5EAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FED242B92180468F00DE5EAE /* KKChannelView.app */,
+				FED242D12180469000DE5EAE /* KKChannelViewTests.xctest */,
+				FED242DC2180469000DE5EAE /* KKChannelViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FED242BB2180468F00DE5EAE /* KKChannelView */ = {
+			isa = PBXGroup;
+			children = (
+				FED242EE218046C000DE5EAE /* TopChannelView */,
+				FED242BC2180468F00DE5EAE /* AppDelegate.h */,
+				FED242BD2180468F00DE5EAE /* AppDelegate.m */,
+				FED242BF2180468F00DE5EAE /* ViewController.h */,
+				FED242C02180468F00DE5EAE /* ViewController.m */,
+				FED242F8218046E900DE5EAE /* KKTestCell.h */,
+				FED242F9218046E900DE5EAE /* KKTestCell.m */,
+				FED242C22180468F00DE5EAE /* Main.storyboard */,
+				FED242C52180469000DE5EAE /* Assets.xcassets */,
+				FED242C72180469000DE5EAE /* LaunchScreen.storyboard */,
+				FED242CA2180469000DE5EAE /* Info.plist */,
+				FED242CB2180469000DE5EAE /* main.m */,
+			);
+			path = KKChannelView;
+			sourceTree = "<group>";
+		};
+		FED242D42180469000DE5EAE /* KKChannelViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				FED242D52180469000DE5EAE /* KKChannelViewTests.m */,
+				FED242D72180469000DE5EAE /* Info.plist */,
+			);
+			path = KKChannelViewTests;
+			sourceTree = "<group>";
+		};
+		FED242DF2180469000DE5EAE /* KKChannelViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FED242E02180469000DE5EAE /* KKChannelViewUITests.m */,
+				FED242E22180469000DE5EAE /* Info.plist */,
+			);
+			path = KKChannelViewUITests;
+			sourceTree = "<group>";
+		};
+		FED242EE218046C000DE5EAE /* TopChannelView */ = {
+			isa = PBXGroup;
+			children = (
+				FED242EF218046C000DE5EAE /* KKChannelLabel.h */,
+				FED242F0218046C000DE5EAE /* KKChannelLabel.m */,
+				FED242F1218046C000DE5EAE /* KKChannelView..m */,
+				FED242F2218046C000DE5EAE /* KKChannelView.h */,
+				FED242F3218046C000DE5EAE /* KKChannelViewLayout.h */,
+				FED242F4218046C000DE5EAE /* KKChannelViewLayout.m */,
+			);
+			path = TopChannelView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FED242B82180468F00DE5EAE /* KKChannelView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED242E52180469000DE5EAE /* Build configuration list for PBXNativeTarget "KKChannelView" */;
+			buildPhases = (
+				FED242B52180468F00DE5EAE /* Sources */,
+				FED242B62180468F00DE5EAE /* Frameworks */,
+				FED242B72180468F00DE5EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKChannelView;
+			productName = KKChannelView;
+			productReference = FED242B92180468F00DE5EAE /* KKChannelView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FED242D02180469000DE5EAE /* KKChannelViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED242E82180469000DE5EAE /* Build configuration list for PBXNativeTarget "KKChannelViewTests" */;
+			buildPhases = (
+				FED242CD2180469000DE5EAE /* Sources */,
+				FED242CE2180469000DE5EAE /* Frameworks */,
+				FED242CF2180469000DE5EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED242D32180469000DE5EAE /* PBXTargetDependency */,
+			);
+			name = KKChannelViewTests;
+			productName = KKChannelViewTests;
+			productReference = FED242D12180469000DE5EAE /* KKChannelViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FED242DB2180469000DE5EAE /* KKChannelViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED242EB2180469000DE5EAE /* Build configuration list for PBXNativeTarget "KKChannelViewUITests" */;
+			buildPhases = (
+				FED242D82180469000DE5EAE /* Sources */,
+				FED242D92180469000DE5EAE /* Frameworks */,
+				FED242DA2180469000DE5EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FED242DE2180469000DE5EAE /* PBXTargetDependency */,
+			);
+			name = KKChannelViewUITests;
+			productName = KKChannelViewUITests;
+			productReference = FED242DC2180469000DE5EAE /* KKChannelViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FED242B12180468F00DE5EAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "凯朱";
+				TargetAttributes = {
+					FED242B82180468F00DE5EAE = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					FED242D02180469000DE5EAE = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = FED242B82180468F00DE5EAE;
+					};
+					FED242DB2180469000DE5EAE = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = FED242B82180468F00DE5EAE;
+					};
+				};
+			};
+			buildConfigurationList = FED242B42180468F00DE5EAE /* Build configuration list for PBXProject "KKChannelView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FED242B02180468F00DE5EAE;
+			productRefGroup = FED242BA2180468F00DE5EAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FED242B82180468F00DE5EAE /* KKChannelView */,
+				FED242D02180469000DE5EAE /* KKChannelViewTests */,
+				FED242DB2180469000DE5EAE /* KKChannelViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FED242B72180468F00DE5EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED242C92180469000DE5EAE /* LaunchScreen.storyboard in Resources */,
+				FED242C62180469000DE5EAE /* Assets.xcassets in Resources */,
+				FED242C42180468F00DE5EAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED242CF2180469000DE5EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED242DA2180469000DE5EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FED242B52180468F00DE5EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED242FA218046E900DE5EAE /* KKTestCell.m in Sources */,
+				FED242C12180468F00DE5EAE /* ViewController.m in Sources */,
+				FED242CC2180469000DE5EAE /* main.m in Sources */,
+				FED242F7218046C000DE5EAE /* KKChannelViewLayout.m in Sources */,
+				FED242F5218046C000DE5EAE /* KKChannelLabel.m in Sources */,
+				FED242F6218046C000DE5EAE /* KKChannelView..m in Sources */,
+				FED242BE2180468F00DE5EAE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED242CD2180469000DE5EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED242D62180469000DE5EAE /* KKChannelViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED242D82180469000DE5EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED242E12180469000DE5EAE /* KKChannelViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FED242D32180469000DE5EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FED242B82180468F00DE5EAE /* KKChannelView */;
+			targetProxy = FED242D22180469000DE5EAE /* PBXContainerItemProxy */;
+		};
+		FED242DE2180469000DE5EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FED242B82180468F00DE5EAE /* KKChannelView */;
+			targetProxy = FED242DD2180469000DE5EAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FED242C22180468F00DE5EAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED242C32180468F00DE5EAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FED242C72180469000DE5EAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED242C82180469000DE5EAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FED242E32180469000DE5EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FED242E42180469000DE5EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FED242E62180469000DE5EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = KKChannelView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhukai.com.KKChannelView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FED242E72180469000DE5EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = KKChannelView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhukai.com.KKChannelView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FED242E92180469000DE5EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567T6T2TBG;
+				INFOPLIST_FILE = KKChannelViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhukai.com.KKChannelViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KKChannelView.app/KKChannelView";
+			};
+			name = Debug;
+		};
+		FED242EA2180469000DE5EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567T6T2TBG;
+				INFOPLIST_FILE = KKChannelViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhukai.com.KKChannelViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KKChannelView.app/KKChannelView";
+			};
+			name = Release;
+		};
+		FED242EC2180469000DE5EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567T6T2TBG;
+				INFOPLIST_FILE = KKChannelViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhukai.com.KKChannelViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KKChannelView;
+			};
+			name = Debug;
+		};
+		FED242ED2180469000DE5EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 567T6T2TBG;
+				INFOPLIST_FILE = KKChannelViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zhukai.com.KKChannelViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KKChannelView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FED242B42180468F00DE5EAE /* Build configuration list for PBXProject "KKChannelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED242E32180469000DE5EAE /* Debug */,
+				FED242E42180469000DE5EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED242E52180469000DE5EAE /* Build configuration list for PBXNativeTarget "KKChannelView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED242E62180469000DE5EAE /* Debug */,
+				FED242E72180469000DE5EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED242E82180469000DE5EAE /* Build configuration list for PBXNativeTarget "KKChannelViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED242E92180469000DE5EAE /* Debug */,
+				FED242EA2180469000DE5EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED242EB2180469000DE5EAE /* Build configuration list for PBXNativeTarget "KKChannelViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED242EC2180469000DE5EAE /* Debug */,
+				FED242ED2180469000DE5EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FED242B12180468F00DE5EAE /* Project object */;
+}
