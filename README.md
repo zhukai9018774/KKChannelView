@@ -6,4 +6,7 @@
   3. 复用collectionViewCell减少内存开销
   4. 自定义属性支持分割线展示，滑块，滑动时标签缩放效果等
   
+     效果图如下：
+     
+     ![效果图](https://github.com/zhukai9018774/KKChannelView/blob/master/KKChannelView/KKChannelView/channelViewTest.gif)
 
