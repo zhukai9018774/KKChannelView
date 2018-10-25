@@ -43,12 +43,12 @@
     
     //    layout.hideSlider = YES;
     //    layout.hideLine = YES;
-    //    layout.titleColor = [UIColor blackColor];
-    //    layout.titleSelectColor = [UIColor redColor];
+        layout.titleColor = [UIColor blackColor];
+        layout.titleSelectColor = [UIColor redColor];
     //    layout.labelHeight = 80;
     //    layout.labelWidth = 100;
     //    layout.titleFont = [UIFont systemFontOfSize:20];
-    //    layout.scale = 1.2;
+        layout.scale = 1.2;
     layout.dataArray = _dataArray;
     KKChannelView *channelView = [[KKChannelView alloc] initWithFrame:CGRectMake(0, 20,ScreenWidth, ScreenHeight-20) layout:layout];
     channelView.delegate = self;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE6C6909218161F7004FD107 /* channelViewTest.gif in Resources */ = {isa = PBXBuildFile; fileRef = FE6C6908218161F7004FD107 /* channelViewTest.gif */; };
 		FED242BE2180468F00DE5EAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242BD2180468F00DE5EAE /* AppDelegate.m */; };
 		FED242C12180468F00DE5EAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED242C02180468F00DE5EAE /* ViewController.m */; };
 		FED242C42180468F00DE5EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED242C22180468F00DE5EAE /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE6C6908218161F7004FD107 /* channelViewTest.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = channelViewTest.gif; sourceTree = "<group>"; };
 		FED242B92180468F00DE5EAE /* KKChannelView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKChannelView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED242BC2180468F00DE5EAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FED242BD2180468F00DE5EAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				FED242F9218046E900DE5EAE /* KKTestCell.m */,
 				FED242C22180468F00DE5EAE /* Main.storyboard */,
 				FED242C52180469000DE5EAE /* Assets.xcassets */,
+				FE6C6908218161F7004FD107 /* channelViewTest.gif */,
 				FED242C72180469000DE5EAE /* LaunchScreen.storyboard */,
 				FED242CA2180469000DE5EAE /* Info.plist */,
 				FED242CB2180469000DE5EAE /* main.m */,
@@ -152,8 +155,8 @@
 			children = (
 				FED242EF218046C000DE5EAE /* KKChannelLabel.h */,
 				FED242F0218046C000DE5EAE /* KKChannelLabel.m */,
-				FED242F1218046C000DE5EAE /* KKChannelView..m */,
 				FED242F2218046C000DE5EAE /* KKChannelView.h */,
+				FED242F1218046C000DE5EAE /* KKChannelView..m */,
 				FED242F3218046C000DE5EAE /* KKChannelViewLayout.h */,
 				FED242F4218046C000DE5EAE /* KKChannelViewLayout.m */,
 			);
@@ -266,6 +269,7 @@
 				FED242C92180469000DE5EAE /* LaunchScreen.storyboard in Resources */,
 				FED242C62180469000DE5EAE /* Assets.xcassets in Resources */,
 				FED242C42180468F00DE5EAE /* Main.storyboard in Resources */,
+				FE6C6909218161F7004FD107 /* channelViewTest.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

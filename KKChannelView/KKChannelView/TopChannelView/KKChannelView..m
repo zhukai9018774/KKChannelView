@@ -73,7 +73,7 @@
  初始化属性
  */
 -(void)setDefaultLayoutWith:(CGRect)frame layout:(KKChannelViewLayout *)layout{
-
+    
     //布局文件
     _layout = layout;
     _dataArray = _layout.dataArray;
@@ -95,7 +95,7 @@
     CGFloat width = _sliderSize.width > 0 ? _sliderSize.width : 50;
     _sliderSize = CGSizeMake(width, height);
     if (_layout.hideSlider) {
-       _sliderSize = CGSizeMake(0, 0);
+        _sliderSize = CGSizeMake(0, 0);
     }
     _sliderColor = _layout.sliderColor ? _layout.sliderColor : [UIColor blackColor];
     
@@ -126,7 +126,7 @@
     [self addSubview:self.topScrollView];
     [self addSubview:self.collectionView];
     [self addSubview:self.lineView];
-    
+    [self bringSubviewToFront:_lineView];
     //布局按钮
     CGFloat labelX = 0;
     CGFloat labelY = 0;
@@ -156,6 +156,7 @@
         [_topScrollView addSubview:label];
     }
     [_topScrollView addSubview:self.sliderView];
+    
     _topScrollView.contentSize = CGSizeMake(_labelArray.count * _labelWidth, 0);
 }
 
@@ -163,7 +164,10 @@
 //每个item的size
 - (CGSize)collectionView:(UICollectionView*)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath*)indexPath{
     //宽度为屏幕宽度
-    CGFloat y = _topHeight +_sliderSize.height +_lineHeight;
+    CGFloat y = _topHeight +_sliderSize.height +_lineHeight +2;
+    if (_lineHeight == 0) {
+        y = _topHeight +_sliderSize.height +_lineHeight;
+    }
     return CGSizeMake(ScreenWidth, _rect.size.height-y);
 }
 
@@ -186,11 +190,12 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     if (self.delegate && [self.delegate respondsToSelector:@selector(KKChannelViewCollectionView:cellForItemAtIndexPath:)]) {
-       return [self.delegate KKChannelViewCollectionView:collectionView cellForItemAtIndexPath:indexPath];
+        return [self.delegate KKChannelViewCollectionView:collectionView cellForItemAtIndexPath:indexPath];
     }else{
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-        cell.contentView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
-         return cell;
+        //        cell.contentView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+        cell.contentView.backgroundColor = [UIColor whiteColor];
+        return cell;
     }
 }
 
@@ -252,7 +257,7 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     if (scrollView == _topScrollView) return;
-        
+    
     //获取偏移量
     CGFloat offsetX = _collectionView.contentOffset.x;
     NSInteger itemCount = offsetX / _collectionView.bounds.size.width;
@@ -282,7 +287,7 @@
     }
     
     if (itemCount == _labelArray.count - 1) return;
-        
+    
     //右侧的label
     KKChannelLabel *rightLabel = _labelArray[itemCount + 1];
     rightLabel.scale = rightScale;
@@ -339,7 +344,10 @@
 
 -(UICollectionView *)collectionView{
     if (_collectionView  == nil) {
-        CGFloat y = _topHeight +_sliderSize.height +_lineHeight;
+        CGFloat y = _topHeight +_sliderSize.height +_lineHeight + 2 ;
+        if (_lineHeight == 0) {
+            y = _topHeight +_sliderSize.height +_lineHeight;
+        }
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,y, _rect.size.width, _rect.size.height - y) collectionViewLayout:self.flowLayout];
         _collectionView.pagingEnabled = YES;
         _collectionView.delegate = self;
@@ -353,7 +361,7 @@
 
 -(UIView *)lineView{
     if (!_lineView && !_layout.hideLine) {
-        _lineView = [[UIView alloc] initWithFrame:CGRectMake(0, _topHeight+_sliderSize.height, _rect.size.width, _lineHeight)];
+        _lineView = [[UIView alloc] initWithFrame:CGRectMake(0, _topHeight+_sliderSize.height+2, _rect.size.width, _lineHeight)];
         _lineView.backgroundColor = _lineColor;
     }
     return _lineView;
